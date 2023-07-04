@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+</head>
+<body>
+
+    <h1>Les formulaires le cours</h1>
+    
+    <form action="destination.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend> Détails :</legend>
+            <label for="Prénom">Prénom : </label>
+
+            <input id="Prénom" type="text" name="Prénom" placeholder="Prénom" required style="background-color: gray; color: whitesmoke;"> </br> </br>
+
+            <label for="Nom">Nom :</label>
+
+            <input id="Nom" type="text" name="Nom" placeholder="Nom" required style="margin-left: 17px; background-color: grey; color: whitesmoke;"></br></br>
+
+            <label for="vie"></label>
+            <textarea name="explication_formation" placeholder="Pourquoi vous plus qu'un autre ?" id="vie" cols="30" rows="5" style="background-color: gray; color: whitesmoke;"></textarea>
+            </br> </br>
+        </fieldset>
+
+        <label for="choix_coche"> Quelle compétence a tu de plus que les autres :</label> </br> </br>
+        <input id="choix_coche" type="checkbox" name="choix1" value="Caca"> Faire caca </br>
+        <input id="choix_coche" type="checkbox" name="choix1" value="Pipi"> Faire pipi </br>
+        <input id="choix_coche" type="checkbox" name="choix1" value="Popo"> Faire popo </br> </br>
+
+        <label for="choix_radio"> Es tu sur de ta réponse, on va vérifier :</label> </br> </br>
+        <input id="choix_radio"  type="radio" name="choix"> Faire caca </br>
+        <input id="choix_radio"  type="radio" name="choix"> Faire pipi </br>
+        <input id="choix_radio"  type="radio" name="choix"> Faire popo </br> </br>
+
+
+        <label for="animal "> Quel animal voudrais tu être ?</label> </br> </br>
+        <select id="animal" name="animal" size="1" required>
+            <option value="Chat">Chat</option>
+            <option value="Tigre">Tigre</option>
+            <option value="Poney">Poney</option>
+            <option value="paslechoix">Choisis en un j'en ferais pas d'autre</option>
+        </select> </br> </br>
+
+        <input type="file" name="Fichier"> <br><br>
+
+        <label>Sélectionnez votre métier : </label>
+        <input type="text" name="metiers1" id="metiers2" list="metiers3" required><br>
+        <datalist id="metiers3">
+        <option value="webmaster">
+        <option value="développeur">
+        <option value="administrateur B.D.D.">
+        </datalist>
+
+
+
+        </br> </br>
+        <input type="submit" value="Envoyer">
+        <input type="button" value="Annulez">
+    </form>
+
+    <h1>Exercices : Grande enquêtes sur les stagiaires</h1>
+
+    <h3>merci de nous répondre</h3>
+    <form action=" http://bienvu.net/script.php" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend> Vos coordonnées </legend>
+
+            <label for="nom">Votre nom</label>
+
+            <input id="nom" type="text" placeholder="Entrez votre nom" required> </br>
+
+            <label for="prenom">Votre prénom</label>
+
+            <input id="prenom" type="text" placeholder="Entrez votre prénom"> </br>
+
+            <label for="datedenaissance"> Votre date de naissance </label>
+
+            <input id="datedenaissance" type="text" placeholder="JJ/MM/AAAA"> </br>
+
+            <label for="adresse">Votre adresse</label>
+
+            <input id="adresse" type="text" placeholder="Entrez votre adresse"> </br>
+
+            <label for="ville">Votre ville</label>
+
+            <input id="ville" type="text" placeholder="Entrez votre ville"> </br>
+
+            <label for="codepostal">Votre code postal</label>
+
+            <input id="codepostal" type="text" placeholder="Entrez votre code postal"> </br>
+
+            <label for="mail">Votre e-mail</label>
+
+            <input id="mail" type="email" pattern=".+@lobex/.com" placeholder="Entrez voter e-mail">
+
+        </fieldset> </br>
+
+        <fieldset>
+            <legend>Vous êtes ?</legend>
+
+            <input type="radio" name="genre">Un homme
+            <input type="radio" name="genre">Une femme
+
+        </fieldset> </br>
+
+        <label for="formation"> Quel formation avez-vous suivis ?</label>
+        <select id="formation" name="" id="">
+            <option value="choix1">DWWM</option>
+            <option value="choix2">TSSR</option>
+            <option value="choix3">TAI</option>
+            <option value="choix4">TRI</option>
+            <option value="choix5">Autre</option>
+        </select> </br></br>
+
+        <label for="autre">Si vous avez répondu autre, précisez</label>
+        <input id="autre" type="text" > </br></br>
+
+        <label for="salaire"> Quel était votre salaire après la formation ?</label>
+        <select id="salaire" name="" id="">
+            <option value="choix1">1000 euros</option>
+            <option value="choix2">1500 euros</option>
+            <option value="choix3">2000 euros</option>
+            <option value="choix4">2500 euros</option>
+            <option value="choix5">Autre</option>
+        </select> </br></br>
+
+
+
+    </form>
+</body>
+</html>
