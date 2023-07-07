@@ -1,0 +1,32 @@
+nav {
+  background-color: green;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-style: italic;
+}
+
+.lien2 {
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+}
+
+.lien2:hover {
+  background-color: yellow;
+  color: red;
+}
