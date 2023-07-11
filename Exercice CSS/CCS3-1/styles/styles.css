@@ -1,13 +1,51 @@
 body
 {
     background-color: #C6C0A0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+ /* Style du menu */
+#menu 
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    font: bold 1em "georgia",verdana;
+    list-style-type: none;
+}
+
+#menu a
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #508768;
+    text-decoration: none;
+    display: block;
+    margin: 5%;
+    line-height: 2em;
+    width: 80%;
+    border: 1px solid blue;
+    background-color: #bdd7b5;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.514);
+}
+
+#menu a:hover,#menua:focus
+{
+    color: #bdd7b5;
+    background-color: #508768;
+    box-shadow: 8px 8px 8px rgba(255, 255, 0, 0.514);
 }
 
 #contenu1
 {
    background-color: whitesmoke; 
    border-radius: 10px;
+   box-shadow: 8px 8px 12px #aaa;
+   padding: 50px;
 }
 
 h2
