@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Les tableaux</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+<body>
+<table border="1" cellspacing="0" style="text-align:center;table-layout: fixed;" width="500px">
+	<caption>Planning des taches par équipe</caption>
+	<thead>
+		<tr>
+			<th rowspan="2" width="70px">Equipes</th>
+			<th class="janvier" colspan="10"> Janvier </th>
+            <th class="supp_bordure" rowspan="2" width="70px"></th>
+		</tr>
+		<tr>
+			<th colspan="2">Lundi</th>
+			<th colspan="2">Mardi</th>
+			<th colspan="2">Mercredi</th>
+			<th colspan="2">Jeudi</th>
+			<th colspan="2">Vendredi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="impaire">
+			<td class="td_impaire">Equipe1</td>
+			<td colspan="6">Tach1</td>
+			<td colspan="4">Tache2</td>
+			<td class="td_semaine" rowspan="2">Semaine 1</td>
+		</tr>
+		<tr class="paire">
+			<td class="td_paire">Equipe2</td> 
+			<td colspan="5">Tache1</td>
+			<td colspan="5">Tache2</td>
+		</tr>
+		<tr class="impaire">
+			<td class="td_impaire">Equipe1</td>
+			<td colspan="2">Tach3</td>
+			<td colspan="6">Tache4</td>
+			<td colspan="2">Tache5</td>
+			<td class="td_semaine" rowspan="2">Semaine 2</td>
+		</tr>
+		<tr class="paire">
+			<td class="td_paire">Equipe2</td>
+			<td colspan="4">Tache3</td>
+			<td colspan="6">Tache4</td>
+		</tr>
+		<tr class="impaire">
+			<td class="td_impaire">Equipe1</td>
+			<td colspan="5">Tache5</td>
+			<td colspan="5">Tache6</td>
+			<td class="td_semaine" rowspan="2">Semaine 3</td>
+		</tr>
+		<tr class="paire">
+			<td class="td_paire">Equipe2</td>
+			<td colspan="2">Tache5</td>
+			<td colspan="8">Tache6</td>
+		</tr>
+		<tr class="impaire">
+			<td class="td_impaire">Equipe1</td>
+			<td colspan="6">Tache7</td>
+			<td colspan="4">Tache8</td>
+			<td class="td_semaine" rowspan="2">Semaine 4</td>
+		</tr>
+		<tr class="paire">
+			<td class="td_paire">Equipe2</td>
+			<td colspan="5">Tache7</td>
+			<td colspan="5">Tache8</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

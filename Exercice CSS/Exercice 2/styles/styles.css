@@ -1,0 +1,50 @@
+caption
+{
+    font-size: 1.5em;
+}
+
+table
+{
+    text-transform: capitalize;
+}
+
+th, td
+{
+    padding: 10px;
+}
+
+.janvier
+{
+    font-size: 2em;
+    color: blue;
+}
+
+.paire
+{
+    background-color: #fcb941;
+}
+
+.impaire
+{
+    background-color: #f1654c;
+}
+
+.td_impaire
+{
+    background-color: #7e3661;
+    color: #fff;
+}
+
+.td_paire
+{
+    background-color: #888888;
+    color: #fff;
+}
+
+.td_semaine
+{
+   background-color: #8870ff;
+   color: #fff;
+}
+
+/* comprendre nth child et recommencer l'exo

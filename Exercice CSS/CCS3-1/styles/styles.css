@@ -1,85 +1,76 @@
-body
-{
-    background-color: #C6C0A0;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  background-color: #c6c0a0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
- /* Style du menu */
-#menu 
-{
-    float: left;
-    margin: 0;
-    padding: 0;
-    font: bold 1em "georgia",verdana;
-    list-style-type: none;
+/* Style du menu */
+#menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font: bold 1em "georgia", verdana;
+  list-style-type: none;
 }
 
-#menu a
-{
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #508768;
-    text-decoration: none;
-    display: block;
-    margin: 5%;
-    line-height: 2em;
-    width: 80%;
-    border: 1px solid blue;
-    background-color: #bdd7b5;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.514);
+#menu a {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #508768;
+  text-decoration: none;
+  display: block;
+  margin: 5%;
+  line-height: 2em;
+  width: 80%;
+  border: 1px solid blue;
+  background-color: #bdd7b5;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.514);
 }
 
-#menu a:hover,#menua:focus
-{
-    color: #bdd7b5;
-    background-color: #508768;
-    box-shadow: 8px 8px 8px rgba(255, 255, 0, 0.514);
+#menu a:hover,
+#menua:focus {
+  color: #bdd7b5;
+  background-color: #508768;
+  box-shadow: 8px 8px 8px rgba(255, 255, 0, 0.514);
 }
 
-#contenu1
-{
-   background-color: whitesmoke; 
-   border-radius: 10px;
-   box-shadow: 8px 8px 12px #aaa;
-   padding: 50px;
+#contenu1 {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 8px 8px 12px #aaa;
+  padding: 50px;
 }
 
-h2
-{
-    color: #7D775C;
-    font-size: 35px;
-    font-weight: bold;
-    font-style: oblique;
-    text-align: center; 
-    letter-spacing: 1px;
+h2 {
+  color: #7d775c;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
-h3
-{
-    color: #7D775C;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
+h3 {
+  color: #7d775c;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-ul
-{
-    line-height: 24px;
+ul {
+  line-height: 24px;
 }
 
-.green
-{
-    display: inline;
-    color: green;
+.green {
+  display: inline;
+  color: green;
 }
 
-#duration
-{
-    color: red;
-    font-size: 25px;
-    text-decoration: underline;
+#duration {
+  color: red;
+  font-size: 25px;
+  text-decoration: underline;
 }
