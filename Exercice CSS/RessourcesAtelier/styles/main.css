@@ -1,0 +1,53 @@
+nav /* Mise en page menu nav */
+{
+    background-color: #44a33d;
+    height: 107.2px;
+}
+
+ul
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    border-right: 2px solid white;
+    padding: 10px;
+    margin: 0;
+}
+
+
+ul li:last-child
+{
+    border: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    background-color: #87bb34;
+    padding: 10px;
+
+}
+
+/* mise en place logo a gauche barre de nav */
+
+img
+{
+    float: inline-start;
+    width: 205.3px;
+
+}
+
+/* mise en page main, presentation page */
+
+main
+{
+    background-color: rgba(128, 128, 128, 0.9);
+}
+
+

@@ -1,0 +1,43 @@
+caption {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+table {
+  border: none;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+/* cibler la deuxieme th de la première tr */
+tr:first-child th:nth-child(2) {
+  font-size: 2em;
+  color: blue;
+}
+/* cibler les tr en position paire dans la balise tbody */
+tbody tr:nth-child(2n) {
+  background-color: #fcb941;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #f1654c;
+}
+/* cibler la première cellule de chaque ligne en position paire  */
+tr:nth-child(odd) > td:first-child {
+  background-color: #7e3661;
+  color: #fff;
+}
+tr:nth-child(even) > td:first-child {
+  background-color: #888888;
+  color: #fff;
+}
+tr:nth-child(odd) > td:last-child {
+  background-color: #8870ff;
+  color: #fff;
+}
+/* cibler la dernière th qui possède un attribut "rowspan" */
+th:last-child[rowspan] {
+  border-right: none;
+  border-top: none;
+}

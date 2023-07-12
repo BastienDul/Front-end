@@ -1,11 +1,12 @@
 caption
 {
     font-size: 1.5em;
+    text-transform: capitalize;
 }
 
 table
 {
-    text-transform: capitalize;
+    border: none;
 }
 
 th, td
@@ -47,8 +48,9 @@ tbody tr:nth-child(2n+1) :last-child
     color: #fff;
 }
 
-thead th:last-child
+thead th:last-child[rowspan]
 {
-    border: 4px solid green
+    border-right: none;
+    border-top: none;
 }
 /* comprendre nth child et recommencer l'exo
