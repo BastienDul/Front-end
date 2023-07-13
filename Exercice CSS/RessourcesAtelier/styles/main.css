@@ -1,53 +1,126 @@
-nav /* Mise en page menu nav */
-{
-    background-color: #44a33d;
-    height: 107.2px;
+body {
+  background: url(../SiteDWWM/Images/A3-1920.jpg);
+  background-size: cover;
+}
+nav /* Mise en page menu nav */ {
+  background-color: #44a33d;
 }
 
-ul
-{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-li
-{
-    border-right: 2px solid white;
-    padding: 10px;
-    margin: 0;
+li {
+  border-right: 2px solid white;
+  padding: 30px;
+  margin: 0;
+  background-color: #87bb34;
+  text-align: center;
 }
 
-
-ul li:last-child
-{
-    border: none;
+ul li:last-child {
+  border: none;
 }
 
-a
-{
-    text-decoration: none;
-    color: white;
-    background-color: #87bb34;
-    padding: 10px;
+a {
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #87bb34;
+}
 
+a:hover,
+li:hover {
+  background-color: #44a33d;
+  transition-duration: 0.5s;
 }
 
 /* mise en place logo a gauche barre de nav */
 
-img
-{
-    float: inline-start;
-    width: 205.3px;
-
+img {
+  float: left;
+  width: 150px;
 }
 
 /* mise en page main, presentation page */
 
-main
-{
-    background-color: rgba(128, 128, 128, 0.9);
+section {
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  width: 90%;
+  background-color: gray;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 1px white;
 }
 
+.sectionindex {
+  text-align: center;
+  height: 380px;
+  padding: 20px;
+  width: 90%;
+  background-color: gray;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 1px white;
+}
 
+main h1,
+h2 {
+  padding: 20px;
+  color: white;
+}
+
+main p,
+div {
+  color: white;
+}
+
+main a {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 1px white;
+  position: relative;
+  top: 100px;
+}
+
+section:hover {
+  box-shadow: 8px 8px 10px white;
+  transition-duration: 0.5s;
+}
+main a:hover {
+  box-shadow: 4px 4px 1px #87bb34;
+  transition-duration: 0.5s;
+}
+
+/*mise en page onglet formation */
+
+.colFormation {
+    display: flex;
+
+}
+.rubriqueFormation {
+  text-align: justify;
+}
+.rubriqueFormation-Titre {
+  font-size: 25px;
+}
+
+.article1 {
+  border: 1px solid red;
+}
+
+.article2 {
+  border: 1 px solid red;
+}
