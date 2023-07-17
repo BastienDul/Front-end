@@ -1,0 +1,151 @@
+body /* Mise en couleur du background */
+{
+    background-color: #1b8b8f;
+}
+
+/* definition des police et couleurs et taille */
+
+a, p
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside p
+{
+    color: #4f504f;
+}
+
+h1, h2, h3
+{
+    font-size: 1.4em;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+nav a
+{
+    font-size: 1.6em;
+}
+
+/* HEADER */
+
+
+.container /* definir largueur de la page article, header et aside */
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+header /* alligner le contenu du header sur la page */
+{
+    text-align: center;
+}
+
+header nav /* background du header + marge inter header + marge ext basse avec le reste du site*/
+{
+    background-color: #5e3c30;
+    padding: 20px;
+}
+
+nav a /* marge interne balise a + mise en page couleur + suppression du trait */
+{
+    padding: 18px;
+    text-decoration: none;
+}
+
+nav a:hover /* background passage de la souris sur le nav a */
+{
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+/* MAIN */
+
+main /* mise en page du contenu du main */
+{
+    display: flex;
+}
+
+/* SECTION */
+
+section /* definition de la marge entre la section et l'aside + proportion de la section */
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #187c80;
+    text-align: justify;
+    width: 70%;
+}
+
+h2 /* background et postionnement des titre dans la section et l'aside */
+{
+    background-color: #5e3c30;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section img /* redimmensionner l'image + border radius */
+{
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* ASIDE */
+
+aside
+{
+    width: 30%;
+    background-color: #f9fdfc;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* MEDIA QUIERIS / RESPONSIVE POUR LA TABLETTE */
+
+@media screen and (max-width: 960px)
+{
+
+    /* gestion des taille de caractere */
+    nav a
+    {
+        font-size: 1.4em;
+    }
+ 
+    .container /* redimension da la largeur du conteneur */
+    {
+        width: 80%;
+    }
+
+    main /* mise en colonne du contenue du main */
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section /* redimension de la section a l'int du conteneur */
+    {
+        width: 100%;
+        margin-right: 0;
+        text-align: justify;
+
+    }
+
+    aside /* redimension du aside a linterieur du conteneur */
+    {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+

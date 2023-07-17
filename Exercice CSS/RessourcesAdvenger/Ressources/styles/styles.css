@@ -118,21 +118,18 @@ footer {
     padding: 5px;
   }
 
-  main
-  {
+  main {
     text-align: center;
     padding: 25px;
   }
 
-  .imgfloat
-  {
+  .imgfloat {
     width: 100%;
     float: none;
     margin-right: 0;
   }
 
-  .lireplus
-  {
+  .lireplus {
     margin: auto;
     padding-top: 10px;
   }
