@@ -1,151 +1,153 @@
-body /* Mise en couleur du background */
-{
-    background-color: #1b8b8f;
+body /* Mise en couleur du background */ {
+  background-color: #1b8b8f;
 }
 
 /* definition des police et couleurs et taille */
 
-a, p
-{
-    color: white;
-    font-family: 'Open Sans', sans-serif;
+a,
+p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
-aside p
-{
-    color: #4f504f;
+aside p {
+  color: #4f504f;
 }
 
-h1, h2, h3
-{
-    font-size: 1.4em;
-    color: white;
-    font-family: 'PT Sans Narrow', sans-serif;
+h1,
+h2,
+h3 {
+  font-size: 1.4em;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
-nav a
-{
-    font-size: 1.6em;
+nav a {
+  font-size: 1.6em;
 }
 
 /* HEADER */
 
-
-.container /* definir largueur de la page article, header et aside */
-{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+.container /* definir largueur de la page article, header et aside */ {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
-
-header /* alligner le contenu du header sur la page */
-{
-    text-align: center;
+header /* alligner le contenu du header sur la page */ {
+  text-align: center;
+  margin-top: 20px;
 }
 
-header nav /* background du header + marge inter header + marge ext basse avec le reste du site*/
-{
-    background-color: #5e3c30;
-    padding: 20px;
+header nav /* background du header + marge inter header + marge ext basse avec le reste du site*/ {
+  background-color: #5e3c30;
+  padding: 30px;
 }
 
-nav a /* marge interne balise a + mise en page couleur + suppression du trait */
-{
-    padding: 18px;
-    text-decoration: none;
+nav a /* marge interne balise a + mise en page couleur + suppression du trait */ {
+  padding: 28px;
+  padding-right: 60px;
+  padding-left: 60px;
+  text-decoration: none;
 }
 
-nav a:hover /* background passage de la souris sur le nav a */
-{
-    background-color: rgba(255, 255, 255, 0.288);
+nav a:hover /* background passage de la souris sur le nav a */ {
+  background-color: #a79189;
+  transition: ease 0.6s;
 }
 
 /* MAIN */
 
-main /* mise en page du contenu du main */
-{
-    display: flex;
+main /* mise en page du contenu du main */ {
+  display: flex;
 }
 
 /* SECTION */
 
-section /* definition de la marge entre la section et l'aside + proportion de la section */
-{
-    margin-top: 10px;
-    margin-right: 10px;
-    background-color: #187c80;
-    text-align: justify;
-    width: 70%;
+section /* definition de la marge entre la section et l'aside + proportion de la section */ {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #187c80;
+  text-align: justify;
+  width: 70%;
 }
 
-h2 /* background et postionnement des titre dans la section et l'aside */
-{
-    background-color: #5e3c30;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
+h2 /* background et postionnement des titre dans la section et l'aside */ {
+  background-color: #5e3c30;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-section img /* redimmensionner l'image + border radius */
-{
-    width: 90%;
-    border-radius: 5px;
+section img /* redimmensionner l'image + border radius */ {
+  width: 90%;
+  border-radius: 5px;
 }
 
 /* ASIDE */
 
-aside
-{
-    width: 30%;
-    background-color: #f9fdfc;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-
+aside {
+  width: 30%;
+  background-color: #f9fdfc;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* MEDIA QUIERIS / RESPONSIVE POUR LA TABLETTE */
 
-@media screen and (max-width: 960px)
-{
+@media screen and (max-width: 960px) {
+  /* gestion des taille de caractere */
+  nav a {
+    font-size: 1.4em;
+  }
 
-    /* gestion des taille de caractere */
-    nav a
-    {
-        font-size: 1.4em;
-    }
- 
-    .container /* redimension da la largeur du conteneur */
-    {
-        width: 80%;
-    }
+  .container /* redimension da la largeur du conteneur */ {
+    width: 100%;
 
-    main /* mise en colonne du contenue du main */
+  }
+
+  main /* mise en colonne du contenue du main */ {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section /* redimension de la section a l'int du conteneur */ {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-top: -20px;
+    text-align: justify;
+  }
+
+  aside /* redimension du aside a linterieur du conteneur */ {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
+}
+
+/* RESPONSIVE || POUR LE FORMAT TELEPHONE */
+
+@media screen and (max-width: 560px) {
+
+    header nav /* mise en page du nav header en colonne comme demandée */
     {
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
 
-    section /* redimension de la section a l'int du conteneur */
+    section
     {
-        width: 100%;
-        margin-right: 0;
-        text-align: justify;
-
+        margin-top: 5px;
+        width: 90%;
     }
 
-    aside /* redimension du aside a linterieur du conteneur */
+    aside /* disparation du aside ! magie magie ! */
     {
-        width: 100%;
-        text-align: center;
-        padding: 0;
+        display: none;
     }
 }
-
-
-
-
-
-
-
