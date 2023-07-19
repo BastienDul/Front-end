@@ -1,34 +1,147 @@
-p{
-font-family: 'Courgette', cursive; }
+p {
+  font-family: "Courgette", cursive;
+}
 
-header /* largeur header, centrage contenue header */
+body
 {
+    background-color: #f2f2f2;
+}
+
+/* HEADER */
+header /* largeur header, centrage contenue header */ {
+  background-color: #f6d4f5;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topbar /* mise en page et placement du texte dans la classe top bar*/ {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.container-header /* placement de l'img + icon + montant du panier */ {
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Positionnement de la classe .right + .left + icon + color */
+
+.right {
+  display: flex;
+  text-align: right;
+}
+
+.right i {
+  color: #ebaef4;
+  font-size: 40px;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
+.right span {
+  font-weight: bold;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  MENU NAV */
+
+header nav {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav a:hover {
+  background-color: #ebaef4;
+  transition: ease-in 0.5s;
+}
+
+nav a:not(:hover) {
+  background-color: #f6d4f5;
+  transition: ease-in-out 0.5s;
+}
+
+/* MAIN */
+
+main /* largeur main + centrage contenue main */ {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#slider /* mettre position relative au parent de #slider-h2 pour pas que #slider-h2 sorte du flux de #slider */ 
+{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+}
+
+#slider h2 /* Mise en page du h2 slider */
+{
+    width: fit-content;
+    padding: 15px;
+    position: absolute;
+    left: 10px;
     background-color: #f6d4f5;
+    opacity: 0.7;
 }
 
-div
+#slider span /* Mise en couleur du span dans le slider */
 {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    color: gray;
 }
 
-.container-header
+.escarpin1 /* redimmensionner img slider */
 {
-    display: flex;
-}
-
-.container-header a, .container-header
-{
-    border: 1px solid right;
-    width: 50%;
-    text-align: center;
-}
-
-.topbar
-{
-    text-align: center;
     width: 100%;
-    background-color: black;
-    color: white;
+}
+
+/* On s'attaque a choisissez vos escarpins */
+
+#select /* mise en forme du conteneur select */
+{
+    margin-top: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.escarpin
+{
+    
+}
+
+
+
+
+/* FOOTER */
+
+footer /* largeur footer + centrage contenue footer */ {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
