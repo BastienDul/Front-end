@@ -125,13 +125,22 @@ main /* largeur main + centrage contenue main */ {
 {
     margin-top: 15px;
     background-color: white;
+    padding: 20px;
+    padding-bottom: 200px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+}
+
+#select article
+{
+  position: relative;
+  top: 100px;
+  right: 400px;
 }
 
 .escarpin
 {
-    
+
 }
 
 
