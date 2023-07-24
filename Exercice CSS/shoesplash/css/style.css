@@ -1,10 +1,16 @@
+body {
+  background-color: #f2f2f2;
+}
+
+/* FONT */
+
 p {
   font-family: "Courgette", cursive;
 }
 
-body
+#news h3
 {
-    background-color: #f2f2f2;
+  font-family: "Courgette", cursive;
 }
 
 /* HEADER */
@@ -64,7 +70,6 @@ header nav {
 }
 
 nav a {
-
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -92,65 +97,169 @@ main /* largeur main + centrage contenue main */ {
   padding: 10px;
 }
 
-#slider /* mettre position relative au parent de #slider-h2 pour pas que #slider-h2 sorte du flux de #slider */ 
-{
-    position: relative;
-    padding: 10px;
-    background-color: white;
+#slider /* mettre position relative au parent de #slider-h2 pour pas que #slider-h2 sorte du flux de #slider */ {
+  position: relative;
+  padding: 10px;
+  background-color: white;
 }
 
-#slider h2 /* Mise en page du h2 slider */
-{
-    width: fit-content;
-    padding: 15px;
-    position: absolute;
-    left: 10px;
-    background-color: #f6d4f5;
-    opacity: 0.7;
+#slider h2 /* Mise en page du h2 slider */ {
+  width: fit-content;
+  padding: 15px;
+  position: absolute;
+  left: 10px;
+  background-color: #f6d4f5;
+  opacity: 0.7;
 }
 
-#slider span /* Mise en couleur du span dans le slider */
-{
-    color: gray;
+#slider span /* Mise en couleur du span dans le slider */ {
+  color: gray;
 }
 
-.escarpin1 /* redimmensionner img slider */
-{
-    width: 100%;
+.escarpin1 /* redimmensionner img slider */ {
+  width: 100%;
 }
 
 /* On s'attaque a choisissez vos escarpins */
 
-#select /* mise en forme du conteneur select */
-{
-    margin-top: 15px;
-    background-color: white;
-    padding: 20px;
-    padding-bottom: 200px;
-    display: flex;
-    justify-content: space-between;
+#select /* mise en forme du conteneur select */ {
+  margin-top: 15px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#select article
+#select h1 /* Mettre un width sur le h1 pour que les chaussures repasse a la ligne avec le flex wrap */
 {
-  position: relative;
-  top: 100px;
-  right: 400px;
+  margin-left: 5%;
+  width: 100%;
 }
 
-.escarpin
+.escarpin /* centrer les élément pour que tout sois a la même hauteur dans les classe escarpin */
 {
-
+  padding-bottom: 15px;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
 }
 
 
+.escarpin:hover /* hover pour avoir l'effet plus opaque quand on passe la souris sur les escarpins choisis */
+{
+  transition: ease 0.6s;
+  opacity: 1;
+}
 
+/* On s'attaque au nouveauté */
 
+#news /* Mise en page de l'emsemble du bloc contenant les nouveautés, les best-seller, les coups de coeurs */
+{
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#new, #best, #crush /* background et padding pour chacun des blocs  */ 
+{
+  padding: 15px;
+  background-color: white;
+}
+
+/* Background h2 nouveauté, best seller, coup de coeur */
+
+#new h2
+{
+  background-color: pink;
+}
+
+#best h2
+{
+  background-color: green;
+}
+
+#crush h2
+{
+  background-color: rgb(0, 192, 240);
+}
 /* FOOTER */
 
 footer /* largeur footer + centrage contenue footer */ {
-  width: 80%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+}
+
+#info
+{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ebaef4;
+}
+
+#info article
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#info i
+{
+  padding: 5px;
+}
+
+#bottombar
+{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6d4f5;
+}
+
+#bottombar ul
+{
+  list-style-type: none;
+}
+
+#bottombar article
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#bottombar article ul /* Supprimer le padding left mis automatiquement pas la balise ul pour bien centrer le texte */
+{
+  padding-left: 0;
+  opacity: 0.5;
+  line-height: 225%;
+}
+
+@media screen and ( max-width: 640px) {
+
+  header
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .clear
+  {
+    display: none;
+  }
+  
 }
