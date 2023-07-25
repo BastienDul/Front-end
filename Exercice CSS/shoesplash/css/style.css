@@ -8,8 +8,8 @@ p {
   font-family: "Courgette", cursive;
 }
 
-#news h3, small
-{
+#news h3,
+small {
   font-family: "Courgette", cursive;
 }
 
@@ -130,14 +130,12 @@ main /* largeur main + centrage contenue main */ {
   flex-wrap: wrap;
 }
 
-#select h1 /* Mettre un width sur le h1 pour que les chaussures repasse a la ligne avec le flex wrap */
-{
+#select h1 /* Mettre un width sur le h1 pour que les chaussures repasse a la ligne avec le flex wrap */ {
   margin-left: 5%;
   width: 100%;
 }
 
-.escarpin /* centrer les élément pour que tout sois a la même hauteur dans les classe escarpin */
-{
+.escarpin /* centrer les élément pour que tout sois a la même hauteur dans les classe escarpin */ {
   padding-bottom: 15px;
   width: 15%;
   margin-left: auto;
@@ -149,17 +147,14 @@ main /* largeur main + centrage contenue main */ {
   opacity: 0.5;
 }
 
-
-.escarpin:hover /* hover pour avoir l'effet plus opaque quand on passe la souris sur les escarpins choisis */
-{
+.escarpin:hover /* hover pour avoir l'effet plus opaque quand on passe la souris sur les escarpins choisis */ {
   transition: ease 0.6s;
   opacity: 1;
 }
 
 /* On s'attaque au nouveauté */
 
-#news /* Mise en page de l'emsemble du bloc contenant les nouveautés, les best-seller, les coups de coeurs */
-{
+#news /* Mise en page de l'emsemble du bloc contenant les nouveautés, les best-seller, les coups de coeurs */ {
   margin-top: 15px;
   width: 100%;
   display: flex;
@@ -167,46 +162,39 @@ main /* largeur main + centrage contenue main */ {
   justify-content: space-between;
 }
 
-#new, #best, #crush /* background et padding pour chacun des blocs  */ 
-{
+#new, #best, #crush /* background et padding pour chacun des blocs  */ {
   padding: 15px;
   background-color: white;
 }
 
 /* Background h2 nouveauté, best seller, coup de coeur */
 
-#new h2
-{
+#new h2 {
   background-color: pink;
   text-align: left;
 }
 
-#new h2 img
-{
+#new h2 img {
   margin-right: 15px;
   margin-left: 5px;
 }
 
-#best h2
-{
+#best h2 {
   background-color: rgb(0, 204, 0);
   text-align: left;
 }
 
-#best h2 img
-{
+#best h2 img {
   margin-right: 15px;
   margin-left: 5px;
 }
 
-#crush h2
-{
+#crush h2 {
   background-color: rgb(0, 192, 240);
   text-align: left;
 }
 
-#crush h2 img
-{
+#crush h2 img {
   margin-right: 15px;
   margin-left: 5px;
 }
@@ -219,8 +207,7 @@ footer /* largeur footer + centrage contenue footer */ {
   margin-right: auto;
 }
 
-#info
-{
+#info {
   width: 100%;
   padding: 15px;
   display: flex;
@@ -228,20 +215,17 @@ footer /* largeur footer + centrage contenue footer */ {
   background-color: #ebaef4;
 }
 
-#info article
-{
+#info article {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-#info i
-{
+#info i {
   padding: 5px;
 }
 
-#bottombar
-{
+#bottombar {
   width: 100%;
   padding: 15px;
   display: flex;
@@ -249,13 +233,11 @@ footer /* largeur footer + centrage contenue footer */ {
   background-color: #f6d4f5;
 }
 
-#bottombar ul
-{
+#bottombar ul {
   list-style-type: none;
 }
 
-#bottombar article
-{
+#bottombar article {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -264,25 +246,20 @@ footer /* largeur footer + centrage contenue footer */ {
   text-align: center;
 }
 
-#bottombar article ul /* Supprimer le padding left mis automatiquement pas la balise ul pour bien centrer le texte */
-{
+#bottombar article ul /* Supprimer le padding left mis automatiquement pas la balise ul pour bien centrer le texte */ {
   padding-left: 0;
   opacity: 0.5;
   line-height: 225%;
 }
 
-@media screen and ( max-width: 640px) {
-
-  header
-  {
+@media screen and (max-width: 640px) {
+  header {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
-  .clear
-  {
+  .clear {
     display: none;
   }
-  
 }
