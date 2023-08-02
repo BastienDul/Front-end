@@ -1,0 +1,339 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+header /* mettre en row le header*/ {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#control_up /* mise en place des bouton du controles des musiques */ {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#control_up button /* largeur des bouton */ {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 5px;
+}
+
+#control_up i /* agrandir la taille des icon */ {
+  font-size: 15px;
+}
+
+#sound_bar/* Redimenssionner la taille de la sounbar */ {
+  width: 40%;
+}
+
+#left_header_control_sound /* mise en page de la barre de son*/ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#left_header_control_sound i {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#left_header_control_sound button{
+  border-radius: 5px;
+}
+
+#center_header/* mise en page du center header */ {
+  text-align: left;
+}
+
+#center_header h3,
+#center_header p,
+#center_header input {
+  margin: 5px;
+}
+
+#timeline_control /* agrandissement de la timeline music au centre du header */ {
+  width: 150%;
+}
+
+#right_side_header {
+  text-align: center;
+}
+
+#right_side_header input/* mise en page barre de recherche, coller l'icone a la barre de recherche*/ {
+  margin-left: -3.5%;
+}
+
+/* ARTICLE */
+
+article /* mise en page de l'article*/ {
+  display: flex;
+  width: 100%;
+}
+
+#left_side_article /* mise en column des trois boutons */ {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 20%;
+  text-align: left;
+}
+
+#left_side_article a /*Mise en page des bouttons music,vidéos,podcast*/ {
+  font-size: 18px;
+  text-decoration: none;
+  color: #328ecf;
+  padding: 15px;
+}
+
+#left_side_article a:hover/* Petite animation/transition sur les bouton music,vidéos, podcast*/ {
+  background-color: #328ecf;
+  color: white;
+  transition: ease-in 0.1s;
+  box-shadow: 2px 2px 6px black;
+}
+
+.border_a {
+  border: 1px solid gray;
+  border-bottom: none;
+}
+
+.border_a_2 {
+  border: 1px solid gray;
+}
+
+#right_side_article /* mise ne page du conteneur des pochettes  */ {
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  gap: 0.5%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.music_container {
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  box-shadow: 2px 2px 1px gray;
+}
+
+.music_container h1 {
+  font-weight: normal;
+  color: #337bb6;
+}
+
+.music_container p {
+  font-size: x-large;
+  color: #337bc5;
+}
+
+@media screen and (max-width: 1200px) {
+  /* refonte du header */
+  #left_side,
+  #center_header,
+  #right_side_header {
+    width: 30%;
+  }
+
+  #timeline_control/* réduction taille de la timeline */ {
+    width: 80%;
+  }
+
+  #left_side_article/* réduction de la largeur de la partie gauche de l'article pour faire de la place au flex wrap*/ {
+    width: 30%;
+  }
+
+  #right_side_article /* Mise au format des images pochette*/ {
+    display: grid;
+    gap: 0.5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #right_side_article img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+/* refonte du header */
+#left_side,
+#center_header,
+#right_side_header {
+  width: 30%;
+}
+
+#timeline_control/* réduction taille de la timeline */ {
+  width: 80%;
+}
+
+#left_side_article/* réduction de la largeur de la partie gauche de l'article pour faire de la place au flex wrap*/ {
+  width: 30%;
+}
+
+#right_side_article /* Mise au format des images pochette*/ {
+  display: grid;
+  gap: 0.5%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#right_side_article img {
+  width: 100%;
+}
+}
+
+
+
+
+/* MEDIA QUERIES MEDIUM (TELEPHONE HORIZONTALE)*/
+
+@media screen and (max-width: 768px) {
+  header/* wrap pour rendre responsive le header plus simplement*/ {
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  #left_side /* agrandissement de l'ancienne partie gauche pour faire passer le reste en bas  */ {
+    width: 100%;
+  }
+
+  #control_up {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  #control_up button {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #left_header_control_sound {
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  #left_header_control_sound button {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #center_header/* margin top pour la propreté de l'header */ {
+    margin-top: 10px;
+    width: 45%;
+  }
+
+  #right_side_header/* redimensionnement + position relative pour pouvoir placer le contenu a l'intérieur en position absolute par la suite */ {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  #right_side_header input , #right_side_header button /* position absolute de l'input et du bouton */ {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+  }
+
+  #right_side_header button /* placement de l'icone a gauche de la barre de recherche */ {
+    margin-left: -11%;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  #left_side_article {
+    width: 80%;
+  }
+
+  #right_side_article {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #right_side_article img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header/* wrap pour rendre responsive le header plus simplement*/ {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  #left_header_control_sound {
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  #left_header_control_sound button {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #center_header/* margin top pour la propreté de l'header */ {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #timeline_control {
+    width: 100%;
+  }
+
+  #right_side_header {
+    margin-top: 30px;
+    width: 100%;
+    position: initial;
+  }
+
+  #right_side_header input , #right_side_header button /* position absolute de l'input et du bouton */ {
+    position: initial;
+  }
+
+  #right_side_header button /* placement de l'icone a gauche de la barre de recherche */ {
+    margin-left: -11%;
+  }
+
+  article {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left_side_article {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #right_side_article {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #right_side_article p {
+    font-size: 15px;
+  }
+
+  #right_side_article h1 {
+    font-size: 20px;
+  }
+
+  #right_side_article img {
+    width: 100%;
+  }
+}
