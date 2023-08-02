@@ -39,6 +39,7 @@ header nav ul{
 }
 
 header nav ul li{
+	
 	display:inline-block;
 	margin:0;
 	height:100%;
@@ -57,7 +58,8 @@ header nav ul li a{
 
 header nav ul li a:hover{
 	background-color:#333;
-	transition: linear 0.25s;
+		transition: linear 0.25s;
+
 }
 
 .home{
