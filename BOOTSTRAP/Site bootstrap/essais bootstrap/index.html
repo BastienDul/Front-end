@@ -1,86 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/2a53f181be.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./asset/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/2a53f181be.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Essaie bootstrap</title>
-</head>
-<body>
+  </head>
+  <body class="bg-dark text-light">
     <header>
-        <div class=" p-2">
-            <div class="row text-center">
-                <div class="col d-flex justify-content-between">
-                    <button class="btn btn-primary px-5"><i class="fa-solid fa-backward-step"></i></button>
-                    <button class="btn btn-primary px-5"><i class="fa-solid fa-play"></i></button>
-                    <button class="btn btn-primary px-5"><i class="fa-solid fa-forward-step"></i></button>
-                </div>
-            </div>
-
-            <div class="row text-center mt-5">
-                <div class="col d-flex justify-content-between">
-                    <button class="btn btn-primary px-5"><i class="fa-solid fa-volume-low"></i></button>
-                    <input type="range">
-                    <button class="btn btn-primary px-5"><i class="fa-solid fa-volume-high"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class=" p-2">
-            <div class="row w-75 ">
-                <div class="col text-center">
-                    <h3>Nom artiste</h3>
-                    <p>Titre de la chanson</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col">
-                    <input class=" w-50" type="range">
-                </div>
-            </div>
+      <div class="p-2">
+        <div class="row text-center">
+          <div class="col m-0 p-0 d-flex justify-content-around">
+            <button class="btn btn-primary px-5">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="btn btn-primary px-5">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn btn-primary px-5">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
         </div>
 
-        <div class=" p-2">
-            <div class="row">
-                <div class="col d-flex justify-content-center p-2">
-                    <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i><input type="search" class="bg-primary border-0 .recherche mx-3 "  name="recherche" id="recherche" placeholder="Recherche"></button>
-                    
-                </div>
-            </div>
-
+        <div class="row text-center mt-5">
+          <div class="col d-flex justify-content-around">
+            <button class="btn btn-primary px-5">
+              <i class="fa-solid fa-volume-low"></i>
+            </button>
+            <input type="range" />
+            <button class="btn btn-primary px-5">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="p-2">
+        <div class="row w-75">
+          <div class="col text-center">
+            <h3>Nom artiste</h3>
+            <p>Titre de la chanson</p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <input class="w-50" type="range" />
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2">
+        <div class="row">
+          <div class="col d-flex justify-content-center p-2">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i
+              ><input
+                type="search"
+                class="bg-primary border-0 .recherche mx-3"
+                name="recherche"
+                id="recherche"
+                placeholder="Recherche"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <article class="row">
+    <article class="d-flex flex-column d-sm-flex flex-sm-row mt-sm-3">
+      <nav>
+        <div class="text-center d-flex justify-content-center">
+          <div class="col d-flex flex-column w-50 text-center w-sm-100">
+            <a
+              class="border border-bottom-0 text-reset text-decoration-none m-0 p-1"
+              href=""
+              >Musique</a
+            >
+            <a
+              class="border border-bottom-0 text-reset text-decoration-none m-0 p-1"
+              href=""
+              >Vidéos</a
+            >
+            <a class="border text-reset text-decoration-none m-0 p-1" href=""
+              >Podcast</a
+            >
+          </div>
+        </div>
+      </nav>
 
-        
-        <nav>
-            <div class="row text-center d-flex justify-content-center">
-                <div class="col d-flex flex-column w-100 text-center">
-                    <a class="border m-1 p-1" href="">Musique</a>
-                    <a class="border m-1 p-1" href="">Vidéos</a>
-                    <a class="border m-1 p-1" href="">Podcast</a>
-                </div>
-            </div>
-        </nav>
-
-            <div class="row mt-5">
-                <div class="col-6 text-center">
-                    <img src="./pochettes/150/1.jpg" alt="photo_pochette">
-                    <h5>Titre</h5>
-                    <p>Nom de l'artiste</p>
-                </div>
-                <div class="col-6 text-center">
-                    <img src="./pochettes/150/2.jpg" alt="photo_pochette">
-                    <h5>Titre</h5>
-                    <p>Nom de l'artiste</p>
-                </div>
-    
-            </div>
-
+      <div class="row mt-5 d-flex justify-content-center mt-sm-0 m-sm-0 p-sm-0">
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/1.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6  text-center">
+          <img src="./pochettes/150/2.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class=" col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/3.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/4.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/5.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/6.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/7.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/1.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/1.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+        <div class="col-6 m-0 p-0 col-sm-6 text-center">
+          <img src="./pochettes/150/2.jpg" alt="photo_pochette" />
+          <h5>Titre</h5>
+          <p>Nom de l'artiste</p>
+        </div>
+      </div>
     </article>
     <script src="./asset/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

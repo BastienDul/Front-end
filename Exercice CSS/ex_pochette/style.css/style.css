@@ -64,9 +64,10 @@ header /* mettre en row le header*/ {
   text-align: center;
 }
 
-#right_side_header input/* mise en page barre de recherche, coller l'icone a la barre de recherche*/ {
-  margin-left: -3.5%;
+#right_side_header i{
+  padding-right: 5px;
 }
+
 
 /* ARTICLE */
 
@@ -232,18 +233,12 @@ article /* mise en page de l'article*/ {
     width: 45%;
     justify-content: center;
     align-items: center;
-    position: relative;
+    margin-top: 5%;
+
   }
 
-  #right_side_header input , #right_side_header button /* position absolute de l'input et du bouton */ {
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
-  }
 
-  #right_side_header button /* placement de l'icone a gauche de la barre de recherche */ {
-    margin-left: -11%;
-  }
+
 
   article {
     width: 100%;
