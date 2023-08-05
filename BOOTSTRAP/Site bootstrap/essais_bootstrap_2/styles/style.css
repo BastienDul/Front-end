@@ -1,0 +1,23 @@
+/* opacity du header */
+
+header{
+    opacity: 0.8;
+}
+
+
+
+/* Font style des lien du header */
+
+/* style de police et epaisseur */
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: light;
+}
+
+header img{
+    width: 100px;
+}
