@@ -7,38 +7,43 @@
     <script src="https://kit.fontawesome.com/2a53f181be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Bootstrap - Openclassroom</title>
 </head>
 
 <body>
 
-    <!-- MENU/HEADER  à suivre https://openclassrooms.com/fr/courses/7542506-creez-des-sites-web-responsives-avec-bootstrap-5/7546721-creez-de-la-navigation-responsive--> 
+    <!-- MENU/HEADER  à suivre https://openclassrooms.com/fr/courses/7542506-creez-des-sites-web-responsives-avec-bootstrap-5/7546721-creez-de-la-navigation-responsive-->
     <header class="bg-secondary sticky-top">
         <div class="container">
             <div class="row">
-                <nav class="navbar navabr-expand navbar-dark d-flex flex-column">
+                <nav class="navbar navabr-expand navbar-dark">
 
-                    <div class="col-12">
-                        <a href="" class="navbar-brand text-uppercase fw-bold">
-                            <span class="bg-dark bg-gradient p-1 rounded-3 text-light">Bastien</span> <span
+                    <div class="col-12 p-2 my-auto align-items-center d-flex justify-content-between col-md-2">
+                        <a href="" class="navbar-brand-md text-uppercase fw-bold">
+                            <span class="bg-dark bg-gradient p-1 rounded-1 text-light">Bastien</span> <span
                                 class="text-light">Duliege</span>
                         </a>
+                        <button class="navbar-toggler btn-secondary bg-dark d-md-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
-                    <div class="col-12">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a href="" class="nav-link px-5  btn btn-secondary">Qui suis-je?</a>
+                    <div class="col-12 collapse navbar-collapses d-md-block col-md-10" id="navbarNav">
+                        <ul class="navbar-nav d-md-flex flex-md-row justify-content-md-end">
+                            <li class="nav-item">
+                                <a href="" class="nav-link btn btn-secondary p-2">Qui suis-je?</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link px-5  btn btn-secondary">Expertise</a>
+                                <a href="" class="nav-link btn btn-secondary p-2">Expertise</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link px-5 btn btn-secondary">Portefolio</a>
+                                <a href="" class="nav-link btn btn-secondary p-2">Portefolio</a>
                             </li>
                             <li class="nav-item5">
-                                <a href="" class="nav-link px-5  btn btn-secondary">Contact</a>
+                                <a href="" class="nav-link btn btn-secondary p-2">Contact</a>
                             </li>
                         </ul>
                     </div>

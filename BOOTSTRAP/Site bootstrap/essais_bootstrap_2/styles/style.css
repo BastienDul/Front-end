@@ -4,6 +4,11 @@ header{
     opacity: 0.8;
 }
 
+/* Enlever soulignement a header */
+header a{
+    text-decoration: none;
+}
+
 /* mise page ul header*/
 
 /* Font style des lien du header */
