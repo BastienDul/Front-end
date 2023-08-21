@@ -9,6 +9,19 @@ header a{
     text-decoration: none;
 }
 
+/* changement vouleur progress bar */
+.progress-bar {
+    background-color: green;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress{
+    background-color: rgba(0, 0, 0, 0.288);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 /* mise page ul header*/
 
 /* Font style des lien du header */
