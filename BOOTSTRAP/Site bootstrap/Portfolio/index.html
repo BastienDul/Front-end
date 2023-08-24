@@ -34,16 +34,16 @@
                     <div class="col-12 collapse navbar-collapses d-md-block col-md-8 col-lg-8" id="navbarNav">
                         <ul class="navbar-nav d-md-flex flex-md-row justify-content-md-end">
                             <li class="nav-item">
-                                <a href="" class="nav-link btn btn-secondary p-2">Qui suis-je?</a>
+                                <a href="#qui" class="nav-link btn btn-secondary p-2">Qui suis-je?</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link btn btn-secondary p-2">Expertise</a>
+                                <a href="#expertise" class="nav-link btn btn-secondary p-2">Expertise</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link btn btn-secondary p-2">Portefolio</a>
+                                <a href="#portfolio" class="nav-link btn btn-secondary p-2">Portefolio</a>
                             </li>
                             <li class="nav-item5">
-                                <a href="" class="nav-link btn btn-secondary p-2">Contact</a>
+                                <a href="#contact" class="nav-link btn btn-secondary p-2">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +54,7 @@
     </header>
     <!-- Présentation -->
 
-    <main>
+    <main id="qui">
 
         <section class="container my-5">
             <div class="row d-flex flex-column d-sm-flex flex-sm-row">
@@ -62,7 +62,7 @@
                     <h1 class="my-2">Je suis Bastien Duliege Développeur fullstack en formation.</h1>
                     <h2 class="my-2">Bienvenue dans mon portfolio.</h2>
                     <div class="col d-sm-flex justify-content-md-start ">
-                        <button class="btn btn-secondary my-5">Mes projets</button>
+                        <button class="btn btn-secondary my-5"><a class="text-decoration-none text-light" href="#portfolio">Mes projets</a></button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
@@ -73,7 +73,7 @@
 
 
         <!-- Mes compétences -->
-        <section class="bg-light">
+        <section id="expertise" class="bg-light">
             <section class="container my-5">
                 <h3 class=" fs-3 fs-md-2">Mon expertise dans le développement front end et back end</h3>
                 <div class="row d-flex d-md-flex flex-md-row h-100">
@@ -156,7 +156,7 @@
 
         <!-- Portfolio/projet Ajouter du contenu au carroussel -->
 
-        <section class="container my-4">
+        <section id="portfolio" class="container my-4">
             <h3 class=" fs-3 fs-md-2">Mon portfolio</h3>
             <h5>Projet perso et pro</h5>
 
@@ -168,7 +168,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="./img/bastienportfolio.png" width="100%" height="100%" alt="">
                     <div class="container">
                       <div class="carousel-caption text-start">
                         <h1>Example headline.</h1>
@@ -210,7 +210,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="bg-light">
+        <section id="contact" class="bg-light">
             <section class="container my-5">
                 <h3 class=" fs-3 fs-md-2">Un projet de création web?</h3>
                 <h5>Allons en discuter autour d'un café</h5>
