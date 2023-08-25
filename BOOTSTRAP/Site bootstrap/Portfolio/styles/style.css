@@ -24,30 +24,39 @@ header a{
 
 /* modif couleur fleche carousel */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     outline: black;
-    background-color: gray;
     background-size: 50%, 50%;
-    border-radius: 15px;
+    background-color: green;
+    border-radius: 50px;
+    border: 1px solid white;
 }
 
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
+.carousel-control-next-icon,
+.carousel-control-prev-icon /*, .carousel-indicators */ {
+    filter: invert(25%);
 }
 
-/* placement titre carousel */
-
+/*  replacer la dic carousel caption */
 
 .carousel-caption{
-  
+    background-color: green;
+    width: 100%;
+    height: 100;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    color: black;
+    text-align: center;
+    padding-left: 5%;
 }
 
+/* carousel_item h5 opacity */
 
-/* mise page ul header*/
-
-/* Font style des lien du header */
+.carousel-item h5{
+    opacity: 0.8;
+}
 
 /* style de police et epaisseur */
 
