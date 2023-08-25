@@ -52,6 +52,11 @@ header a{
     padding-left: 5%;
 }
 
+.carousel-caption h4, .carousel-caption p{
+    position: relative;
+    right: 35px;
+}
+
 /* carousel_item h5 opacity */
 
 .carousel-item h5{

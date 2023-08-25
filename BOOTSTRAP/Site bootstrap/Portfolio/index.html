@@ -11,6 +11,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="php" href="formulaire.php">
   <title>Portfolio | Bastien Duliege</title>
 </head>
 
@@ -228,7 +229,7 @@
             <img src="./img/ChocoBoom.png" width="100%" alt="Image d'un site web" />
             <div class="container-fluid">
               <div class="carousel-caption d-none d-lg-block">
-                <h1>Choco Boom !</h1>
+                <h4>Choco Boom !</h4>
                 <p class="opacity-75">
                   Mon premier site internet en responsive, fait en HTML et en
                   CSS !
@@ -249,7 +250,7 @@
             <img src="./img/Transition2.png" width="100%" alt="Image d'un site web" />
             <div class="container">
               <div class="carousel-caption d-none d-lg-block">
-                <h1>Transition CSS !</h1>
+                <h4>Transition CSS !</h4>
                 <p>
                   Un nouvel exercice que j'ai réaliser avec des transition en CSS ! 
                 </p>
@@ -272,33 +273,35 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="bg-light">
+    <!-- Contact ENVOIS DEMAIL PAS ENCORE FONCTIONELLE-->
+      <section id="contact" class="bg-light">
       <section class="container my-5">
         <div class="row">
           <h3 class="fs-3 fs-md-2">Un projet de création web?</h3>
           <h5>Allons en discuter autour d'un café</h5>
           <div class="col my-2 col-sm-4">
-            <img class="w-100" src="./img/coffee-ge384c50a7_1280.jpg" alt="Image d'un café" />
+            <img class="w-100 h-100 align-items-center justify-content-center" src="./img/coffee-ge384c50a7_1280.jpg" alt="Image d'un café" />
           </div>
           <div class="col-8 my-2 text-justify col-sm-8">
-            <form action="">
+            <form method="post" action="formulaire.php" target="_blank">
               <fieldset>
                 <legend>Me contacter</legend>
                 <div class="form-group">
                   <label for="nom">Entrez votre nom</label>
-                  <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                  <input name="nom" type="text" class="form-control" id="nom" placeholder="Votre nom" required>
                 </div>
 
                 <div class="form-group">
                   <label for="email">Entres votre mail</label>
-                  <input type="email" class="form-control" id="email" placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="">Commentaires</label>
-                  <textarea name="commentaire" class="textarea w-100" id="commentaire"" placeholder="Votre commentaire"></textarea>
+                  <label for="commentaire">Commentaires</label>
+                  <textarea name="commentaire" class="textarea w-100" id="commentaire" placeholder="Votre commentaire"></textarea>
                 </div>
+
+                <button type="submit" name="nom email commentaire" class="btn btn-success text-center border w-100"> Envoyer</button>
 
               </fieldset>
             </form>
