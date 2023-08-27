@@ -9,9 +9,15 @@ header a{
     text-decoration: none;
 }
 
+/* modif couleur hover navlink */
+
+.nav-link:hover{
+    background-color: rgba(25, 135, 84, 1);
+}
+
 /* changement vouleur progress bar */
 .progress-bar {
-    background-color: green;
+    background-color: rgba(25, 135, 84, 1);
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -28,7 +34,7 @@ header a{
     width: 50px;
     outline: black;
     background-size: 50%, 50%;
-    background-color: green;
+    background-color: rgba(25, 135, 84, 1);
     border-radius: 50px;
     border: 1px solid white;
 }
@@ -41,12 +47,12 @@ header a{
 /*  replacer la dic carousel caption */
 
 .carousel-caption{
-    background-color: green;
+    background-color: rgba(108, 117, 125, 1);
     width: 100%;
     height: 100;
     left: 0;
     bottom: 0;
-    opacity: 0.8;
+    opacity: 0.9;
     color: black;
     text-align: center;
     padding-left: 5%;
