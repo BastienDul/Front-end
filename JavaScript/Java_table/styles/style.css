@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+
+
+div{
+    background-color: aqua;
+    padding: 10px;
+    box-shadow: 4px 4px 4px black;
+    border: 1px solid;
+}
+
+#table1{
+    border-radius: 15px 0px 0px 15px;
+}
+
+#table10{
+    border-radius: 0px 15px 15px 0px;
+}
+
+
