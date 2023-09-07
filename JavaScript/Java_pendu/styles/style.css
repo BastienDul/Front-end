@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(153, 0, 0);
+}
+
+body{
+    background: url(../img/halloween-6749878_1920.jpg) no-repeat center fixed;
+}
+
+/* positionnement button dans section alphabet */
+
+#alphabet{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+
+/* mise en forme des button, pour qu'ils apparaissent. */
+button{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* Mise en forme du bouton qui contient le nombre d'essais réalisable */
+#button_essais{
+    border: 1px solid;
+    margin-top: 15px;
+}
+
+#button_compteur{
+    padding: 30px;
+    border-radius: 15px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin: auto;
+    color: white;
+}
+
+/* Affichage de mes spans */
+
+#span_lettre{
+    border: 1px solid;
+    margin-top: 15px;
+}
