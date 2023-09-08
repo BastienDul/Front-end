@@ -1,11 +1,37 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(153, 0, 0);
+    color: gray;
 }
 
 body{
     background: url(../img/halloween-6749878_1920.jpg) no-repeat center fixed;
+}
+
+/* positionnement du header */
+header{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+
+
+
+
+/* Positionnement du main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* positionnement button dans section alphabet */
@@ -13,7 +39,7 @@ body{
 #alphabet{
     display: flex;
     justify-content: center;
-    border: 1px solid;
+    width: 100%;
 }
 
 /* mise en forme des button, pour qu'ils apparaissent. */
@@ -24,12 +50,11 @@ button{
 
 /* Mise en forme du bouton qui contient le nombre d'essais réalisable */
 #button_essais{
-    border: 1px solid;
     margin-top: 15px;
 }
 
 #button_compteur{
-    padding: 30px;
+    padding: 15px;
     border-radius: 15px;
     background-color: green;
     display: flex;
@@ -41,8 +66,14 @@ button{
 }
 
 /* Affichage de mes spans */
-
 #span_lettre{
-    border: 1px solid;
-    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    justify-content: center;
+}
+
+span{
+    padding: 5px;
+    color: white;
 }
