@@ -1,79 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: gray;
-}
-
 body{
-    background: url(../img/halloween-6749878_1920.jpg) no-repeat center fixed;
+    background: url(../img/halloween-4582988_1920.jpg) center no-repeat fixed;
 }
 
-/* positionnement du header */
-header{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    padding: 30px;
+*{
+    color: white;
+    font-size: 1.1em;
+}
 
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
 }
 
 
-
-
-
-/* Positionnement du main */
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
 }
 
-/* positionnement button dans section alphabet */
-
-#alphabet{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-/* mise en forme des button, pour qu'ils apparaissent. */
 button{
-    padding: 15px;
-    border-radius: 30px;
-}
-
-/* Mise en forme du bouton qui contient le nombre d'essais réalisable */
-#button_essais{
-    margin-top: 15px;
-}
-
-#button_compteur{
-    padding: 15px;
+    color: orangered;
     border-radius: 15px;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    margin: auto;
-    color: white;
+    padding: 15px;
 }
 
-/* Affichage de mes spans */
-#span_lettre{
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    justify-content: center;
+section{
+    padding: 15px;
 }
 
 span{
-    padding: 5px;
-    color: white;
+    font-size: 1.5em;
 }
+

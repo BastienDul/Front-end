@@ -1,113 +1,108 @@
 console.log("script chargé");
 
+// Liste de mots mystères prédéfinis
+const motsMysteres = ["JACUZZI", "ORDINATEUR", "VOITURE", "TELEPHONE", "MAISON", "PONEY"];
+
+// Sélectionnez un mot mystère aléatoire
+const indexAleatoire = Math.floor(Math.random() * motsMysteres.length);
+const MOTMYSTERE = motsMysteres[indexAleatoire];
+let lettresMotMystere = MOTMYSTERE.split(""); // Convertir en majuscules
+
+
+
 // Création du conteneur main
 let main = document.createElement("main");
 document.body.appendChild(main);
-
 
 // Création du conteneur section qui contiendra la table avec les lettres de l'alphabet
 let sectionAlphabet = document.createElement("section");
 sectionAlphabet.id = "alphabet";
 main.appendChild(sectionAlphabet);
 
-// Creation de la table contenant les buttons
-let uneTable = document.createElement("table");
-uneTable.id="tableau";
-sectionAlphabet.appendChild(uneTable);
 
-// Creation du tableau contenant les lettres de l'alphabet.
-let lettre = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
-// Création du mot mystère
-const MOTMYSTERE = ["jacuzzi"];
-let lettresMotMystere = MOTMYSTERE[0].split("");
-console.log(lettresMotMystere);
-
-// Création de la boucle afin de stocker les lettre de l'alphabet dans des buttons
-for (let i = 0 ; i <= 25; i++) {
-
-    console.log("for chargée")
-
-    //  Création des boutons
-     
+// Création de la boucle afin de stocker les lettres de l'alphabet dans des boutons
+for (let i = 0; i < 26; i++) { // Utiliser un index de 0 à 25 pour les lettres de l'alphabet
+    // Création des boutons
     let buttonDansTable = document.createElement("button");
-    buttonDansTable.className = "button_" + i;
-    uneTable.appendChild(buttonDansTable);
-
-    // Injecter les lettres dans les buttons
-    buttonDansTable.textContent=lettre[i];
+    let lettre = String.fromCharCode(65 + i); // Convertir l'index en lettre majuscule
+    buttonDansTable.id = "button_" + lettre;
+    sectionAlphabet.appendChild(buttonDansTable);
+    // Injecter les lettres dans les boutons
+    buttonDansTable.textContent = lettre;
 }
-
 
 // Création du compteur pour la défaite
 let compteur = 0;
 
-// Creation du conteneur section qui contiendra le boutton pour le décompte d'erreurs.
+// Création du conteneur section qui contiendra le bouton pour le décompte d'erreurs.
 let sectionButton = document.createElement("section");
-sectionButton.id = "button_essais";
 main.appendChild(sectionButton);
 
-
-// Création du bouton qui contiendra le decompte des erreurs
-let buttonCompteur = document.createElement("bouton");
-buttonCompteur.id = "button_compteur";
-sectionButton.appendChild(buttonCompteur);
-buttonCompteur.innerText = "A vous de jouer !";
-
-// Ecouter les clicks de l'utilisateur afin creer un messages personnaliser a chaque erreur de celui ci !
-buttonCompteur.addEventListener("click",function () {
-    compteur++;
-
-
-switch (compteur) {
-    case 1:
-        buttonCompteur.innerText = "7 essais restants";
-        buttonCompteur.style.backgroundColor = "red";
-        break;
-    case 2:
-        buttonCompteur.innerText = "6 essais restants";
-        break;
-    case 3:
-        buttonCompteur.innerText = "5 essais restants";
-        break;
-    case 4:
-        buttonCompteur.innerText = "4 essais restants";
-        break;
-    case 5:
-        buttonCompteur.innerText = "3 essais restants";
-        break;
-    case 6:
-        buttonCompteur.innerText = "2 essais restants";
-        break;
-    case 7:
-        buttonCompteur.innerText = "1 essais restants";
-        break;
-    case 8:
-        buttonCompteur.innerText = "Perdu !";
-        break;
-}
-})
-
-
-// Creation du conteneur pour acceuillir les element span dedans
+// Création du conteneur pour accueillir les éléments span dedans
 let sectionSpan = document.createElement("section");
 sectionSpan.id = "span_lettre";
 main.appendChild(sectionSpan);
 
-
-// Création des spans pour entrer les lettre choisis pas l'utilisateur 
-for (let i2 = 0; i2 < lettresMotMystere.length ; i2++) {
-
-    console.log("span chargé");
-
-    
+// Création des spans pour afficher les lettres choisies par l'utilisateur
+for (let index = 0; index < lettresMotMystere.length; index++) {
     let span = document.createElement("span");
-    span.className = "span_reception" + i2;
-
+    span.classList.add("span_reception");
     sectionSpan.appendChild(span);
-    span.textContent= "-" + " ";
-
+    span.textContent = "-";
 }
 
+// Ajoutez un compteur d'essais restants
+let essaisRestants = 8; // Nombre d'essais initiaux
+let essaisRestantsText = document.createElement("span");
+essaisRestantsText.id = "essais";
+essaisRestantsText.textContent = essaisRestants + " essais restants";
+sectionButton.appendChild(essaisRestantsText);
 
+// Gestion des clics sur les boutons de l'alphabet
+let lesTirets = document.querySelectorAll(".span_reception");
 
+// Fonction pour désactiver tous les boutons de l'alphabet
+function desactiverBoutonsAlphabet() {
+    document.querySelectorAll("button").forEach((button) => {
+        button.disabled = true;
+    });
+}
+
+// Gestion des clics sur les boutons de l'alphabet
+document.querySelectorAll("button").forEach((element) => {
+    element.addEventListener("click", (eventDetail) => {
+        if (essaisRestants <= 0) return; // Ne faites rien si le jeu est terminé
+
+        eventDetail.target.disabled = true;
+        let trouve = false;
+        let gagne = true;
+        for (let index = 0; index < lettresMotMystere.length; index++) {
+            if (eventDetail.target.innerText === lettresMotMystere[index]) {
+                trouve = true;
+                lesTirets[index].textContent = lettresMotMystere[index];
+            }
+        }
+        if (!trouve) {
+            essaisRestants--;
+            essaisRestantsText.textContent = essaisRestants + " essais restants";
+
+            if (essaisRestants === 0) {
+                essaisRestantsText.textContent = "Perdu !";
+                desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de défaite
+            }
+        } else {
+            // Vérifiez la victoire
+            lesTirets.forEach(spanTiret => {
+                if (spanTiret.innerText === "-") {
+                    gagne = false;
+                }
+            })
+            if (gagne === true) {
+                sectionAlphabet.style.visibility = "hidden"
+                essaisRestantsText.textContent = "Gagné !";
+                desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de victoire
+            }
+        }
+    });
+});
