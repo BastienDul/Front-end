@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0; 
+    color: white;   
+}
+
+body{
+    background: url(../img/gift-1420830_1920.jpg);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: black;
+    opacity: 1;
+    font-size: 1.5em;
+    border-style: dotted;
+    border-color: pink;
+
+}
+
+label{
+    padding: 5px;
+    font-size: 0.8em;
+
+}
+
+input{
+    width: 50%;
+    margin: auto;
+    line-height: 35px;
+    color: black;
+    margin-top: 15px
+
+}
+
+button{
+    color: black;
+    padding: 10px;
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 30px;
+
+}
+
+@media screen and (max-width: 700px) {
+     input{
+        width: 100%;
+        color: black;
+        margin-top: 15px;
+    }
+}
