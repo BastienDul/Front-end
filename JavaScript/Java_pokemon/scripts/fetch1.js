@@ -1,11 +1,17 @@
 // Étape 1 : Définir l'URL de l'API Pokémon
 const apiUrl = "https://pokebuildapi.fr/api/v1/pokemon/";
 
+
+let selectedPokemonData = null; // Variable pour stocker les données du Pokémon sélectionné
+
+
+
 // Étape 2 : Sélectionner les éléments HTML
 const form = document.querySelector("form"); // Sélectionnez le formulaire
 const resultatElement = document.querySelector("#resultat"); // Sélectionnez la balise où afficher les résultats
 const select = document.getElementById("selectCreation"); // Sélectionnez le menu déroulant
-const boutonAfficher = document.querySelector('button[name="pokemon"]'); // Sélectionnez le bouton "Afficher"
+let boutonAfficher = null;
+boutonAfficher = document.querySelector('button[name="pokemon"]'); // Sélectionnez le bouton "Afficher"
 const boutonDetail = document.querySelector('button[name="carac"]'); // Selectionenr le bouton créer en JS
 
 // Étape 3 : Effectuer une requête API pour obtenir la liste complète des Pokémon
@@ -34,6 +40,8 @@ boutonAfficher.addEventListener("click", function () {
     fetch(apiUrl + selectedPokemonIndex)
       .then((response) => response.json()) // Convertir la réponse en JSON
       .then((selectedPokemon) => {
+        // Stocker les informations du Pokémon sélectionné dans la variable selectedPokemonData
+        selectedPokemonData = selectedPokemon;
         // Afficher les informations du Pokémon sélectionné dans la balise résultat
         resultatElement.innerHTML = `
           <h2>Voici les informations de ${selectedPokemon.name}</h2>
@@ -48,8 +56,19 @@ boutonAfficher.addEventListener("click", function () {
               .join(", ")}</p>`
             : "<p>Aucune évolution.</p>"
           }
-            <button type="submit" name="caract"><a href="./carateristique.html" target="_blank">Voir caractéristique</a></button>
+            <button type="submit" name="caract">Caratéristique</button>
         `;
+        document.querySelector('button type="submit"', () => {
+          boutonDetail.addEventListener('click', function (a) {
+            a.preventDefault()
+            let para = new URLSearchParams();
+            para.append("pokemon", selectedPokemonIndex);
+            console.log(para);
+            location.href = "http://localhost/Pokemon/details.html?" + para.get("pokemon");
+          })
+
+        })
+
       })
       .catch((error) => {
         console.error("Erreur lors de la requête API : " + error); // Gérez les erreurs
@@ -57,6 +76,8 @@ boutonAfficher.addEventListener("click", function () {
   } else {
     console.error("Sélection de Pokémon invalide.");
   }
+
+
 });
 
 // Étape 5 : Ajouter un gestionnaire d'événements "submit" au formulaire (pour gérer la soumission)
@@ -66,9 +87,3 @@ form.addEventListener("submit", function (event) {
   // ...
 });
 
-
-let analyticsData = {boutonAfficher};
-
-window.addEventListener("unload", function() {
-  navigator.sendBeacon("/analytics", JSON.stringify(analyticsData));
-});
