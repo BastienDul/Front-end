@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+.nav-link{
+    color: rgba(243, 237, 237, 0.4) !important;
+}
+
+.input-group{
+    width: 15%;
+}
+
+.btn-savoir-plus{
+    width: 15%;
+}

@@ -87,7 +87,13 @@ document.querySelectorAll("button").forEach((element) => {
             essaisRestants--;
             essaisRestantsText.textContent = essaisRestants + " essais restants";
 
+            if (essaisRestants === 1) {
+                
+                essaisRestantsText.textContent = essaisRestants + " essai restant";
+            }
+
             if (essaisRestants === 0) {
+                sectionAlphabet.style.visibility = "hidden"
                 essaisRestantsText.textContent = "Perdu !";
                 desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de défaite
             }
