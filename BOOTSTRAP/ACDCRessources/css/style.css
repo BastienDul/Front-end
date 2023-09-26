@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'theDark';
+    src: url(../fonts/TheDark.ttf);
+}
+
+@font-face {
+    font-family: 'rocknroll';
+    src: url(../fonts/rocknroll_typo_crazy.ttf);
+}
+
+@font-face {
+    font-family: 'hard rock';
+    src: url(../fonts/HARD_ROCK.ttf);
+}
+
+/* retour en haut du site */
+
+body{
+    background-color: gray;
+}
+
+/* header */
+
+h1, .navbar-brand{
+   font-family: 'theDark'; 
+}
+
+
+
+svg{
+    color: red;
+}
+.btn-danger{
+    font-family: 'rocknroll';
+    font-size: 1.5em;
+}
+
+/* img membres redimensionnage */
+#membre img{
+    height: 15rem;
+}
+
+
+/* Stylisation des cards */
+.card{
+    box-shadow: 12px 8px 8px black;
+}
+
+.card h5{
+    color: red;
+    font-family: 'rocknroll';
+    font-size: 1.5em;
+}
+
+/* modification des placeholder */
+
+::placeholder{
+    color: red;
+    font-family: 'hard rock';
+    font-size: 2em;
+}
+
+/* hover tableau */
+th:hover{
+    background-color: gray;
+}
