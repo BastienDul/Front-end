@@ -87,24 +87,14 @@ document.querySelectorAll("button").forEach((element) => {
             essaisRestants--;
             essaisRestantsText.textContent = essaisRestants + " essais restants";
 
-<<<<<<< HEAD
-            if (essaisRestants === 1) {
-                
-                essaisRestantsText.textContent = essaisRestants + " essai restant";
-=======
             if(essaisRestants ===1){
                 essaisRestantsText.textContent = essaisRestants + " essai restant";
 
->>>>>>> d6b9ad686c61d8f4296a28c5712ae7783b0595b4
             }
 
             if (essaisRestants === 0) {
                 sectionAlphabet.style.visibility = "hidden"
-<<<<<<< HEAD
-                essaisRestantsText.textContent = "Perdu !";
-=======
                 essaisRestantsText.textContent = "Perdu ! Le mot était : " + lettresMotMystere.join("");
->>>>>>> d6b9ad686c61d8f4296a28c5712ae7783b0595b4
                 desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de défaite
                 let boutonRejouer = document.createElement('button');
                 boutonRejouer.id = "rejouer";
