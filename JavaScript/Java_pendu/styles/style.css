@@ -15,21 +15,26 @@ h1{
 
 
 main{
+    border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 button{
     color: orangered;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 15px;
 }
 
 section{
+    margin-top: 30px;
     padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 span{

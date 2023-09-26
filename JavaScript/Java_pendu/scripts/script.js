@@ -1,7 +1,7 @@
 console.log("script chargé");
 
 // Liste de mots mystères prédéfinis
-const motsMysteres = ["JACUZZI", "ORDINATEUR", "VOITURE", "TELEPHONE", "MAISON", "PONEY"];
+const motsMysteres = ["JACUZZI", "ORDINATEUR", "VOITURE", "TELEPHONE", "MAISON", "PONEY", "GAG", "ATRE", "AIMER", "CABANE", "ARBRE", "BANANE", "CROCODILE", "DINOSAURE", "ELEPHANT", "FUSEE", "GIRAFE", "HIBOU", "IGLOO", "JARDIN", "KANGOUROU", "LUNE", "MONTAGNE", "NAVIRES", "OCEAN", "PAPILLON", "QUAD", "RADIO", "SOURIS", "TORTUE", "URGENCE", "VOYAGE", "WAGON", "XYLOPHONE", "YACHT", "ZEBRE", "TABLEAU", "LIVRE", "PLANTE", "FENETRE", "CHEVAL", "PISCINE", "PIZZA", "CAFE", "SANDWICH", "AVION", "BATEAU", "CHAUSSURE", "CASQUE", "CHOCOLAT", "CISEAUX", "EPEE", "FLEUR", "GUITARE", "HORLOGE", "IGUANE", "JUPITER", "KIOSQUE", "LAMPADAIRE", "MICROPHONE", "NUAGE", "ORANGE", "PIERRE", "QUOTIDIEN", "RADAR", "SATELLITE", "TROMPETTE", "ULYSSE", "VACHE", "WAGONNET", "XYLOPHONE", "YACHT", "ZENITH", "TROU", "ECLAIR", "HARMONIE", "MANGUE", "TRONC", "SILENCE", "VOLCAN", "CHAUVE", "BEURRE", "CUIVRE", "PISTOLET", "BRISE", "CIGARE", "FREIN", "BANQUE", "DELTA", "GOLF", "JAVA", "LOTION", "OTARIE", "SUD", "VESTE", "YOGA", "ZOO", "TARTINE", "TATOUAGE", "BOTTINE", "PLAISIR", "MANCHE", "CAPUCINE", "CHIFFON", "DOUANE", "ELEVAGE", "FOYER", "GUITARE", "HAMSTER", "INSECTE", "JUPE", "KIOSQUE", "LUCARNE", "MERIDIEN", "NID", "OASIS", "PIERRE", "QUILLE", "RUBAN", "SERPENT", "TREILLE", "UTOPIE", "VIOLETTE", "WAGONNET", "XYLOPHONE", "YOGOURT", "ZIGZAG"];
 
 // Sélectionnez un mot mystère aléatoire
 const indexAleatoire = Math.floor(Math.random() * motsMysteres.length);
@@ -87,15 +87,32 @@ document.querySelectorAll("button").forEach((element) => {
             essaisRestants--;
             essaisRestantsText.textContent = essaisRestants + " essais restants";
 
+<<<<<<< HEAD
             if (essaisRestants === 1) {
                 
                 essaisRestantsText.textContent = essaisRestants + " essai restant";
+=======
+            if(essaisRestants ===1){
+                essaisRestantsText.textContent = essaisRestants + " essai restant";
+
+>>>>>>> d6b9ad686c61d8f4296a28c5712ae7783b0595b4
             }
 
             if (essaisRestants === 0) {
                 sectionAlphabet.style.visibility = "hidden"
+<<<<<<< HEAD
                 essaisRestantsText.textContent = "Perdu !";
+=======
+                essaisRestantsText.textContent = "Perdu ! Le mot était : " + lettresMotMystere.join("");
+>>>>>>> d6b9ad686c61d8f4296a28c5712ae7783b0595b4
                 desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de défaite
+                let boutonRejouer = document.createElement('button');
+                boutonRejouer.id = "rejouer";
+                main.appendChild(boutonRejouer);
+                boutonRejouer.innerText ="Rejouer"
+                boutonRejouer.addEventListener("click", function(){
+                    location.reload();
+                })
             }
         } else {
             // Vérifiez la victoire
@@ -108,6 +125,14 @@ document.querySelectorAll("button").forEach((element) => {
                 sectionAlphabet.style.visibility = "hidden"
                 essaisRestantsText.textContent = "Gagné !";
                 desactiverBoutonsAlphabet(); // Désactiver les boutons en cas de victoire
+                let boutonRejouer = document.createElement('button');
+                boutonRejouer.id = "rejouer";
+                main.appendChild(boutonRejouer);
+                boutonRejouer.innerText ="Rejouer"
+                boutonRejouer.addEventListener("click", function(){
+                    location.reload();
+                })
+
             }
         }
     });
