@@ -16,7 +16,8 @@
 /* retour en haut du site */
 
 body{
-    background-color: gray;
+    font-family: 'RocknRoll One', sans-serif;
+    background: linear-gradient(118deg, rgb(17, 17, 17) 0%,rgb(17, 17, 17) 20%,#e92424 20%,#e92424 40%,black 40%,black 80%, #e92424 80%, #e92424 100%);
 }
 
 /* header */
@@ -25,6 +26,10 @@ h1, .navbar-brand{
    font-family: 'theDark'; 
 }
 
+/* couleur figcaption */
+.figure-caption{
+    color: white;
+}
 
 
 svg{
