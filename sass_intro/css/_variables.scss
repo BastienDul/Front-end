@@ -1,0 +1,7 @@
+$main-background-color: #f0c77a;
+$content-background-color: #777;
+
+@function myWidth(){
+    $resultat: 200px /2;
+    @return $resultat;
+}
